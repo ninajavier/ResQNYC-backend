@@ -1,16 +1,15 @@
 const express = require('express');
+const dataController = require("./controllers/data.controller.js");
 const app = express();
-const cors = require('cors');
 
-app.use(express.json());
-app.use(cors());
+app.use('/data', dataController);
 
 app.get('/', (req, res) => {
-    res.send('ResQNYC');
+  res.send('ResQNYC');
 });
 
 app.get('*', (req, res) => {
-    res.status(404).send('Page not found');
+  res.status(404).send('Page not found');
 });
 
 module.exports = app;

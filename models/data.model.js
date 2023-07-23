@@ -1,4 +1,4 @@
-[
+module.exports = [
     {
         "the_geom": "POINT (-73.8186225050414 40.77485678097445)",
         "CITY": "Flushing",
